@@ -1,15 +1,15 @@
 package com.myntra.Testscripts;
 
 import org.openqa.selenium.WebDriver;
-import com.myntra.Pages.*;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.myntra.Base.TestBase;
+import com.myntra.Pages.Requirement3;
+import com.myntra.Pages.Requirement4;
 
-public class Requirement2Test {
+public class Requirement4Test {
 	TestBase base= new TestBase();
 	WebDriver driver=null;
 	@BeforeMethod
@@ -18,10 +18,9 @@ public class Requirement2Test {
 		
 	}
 	@Test
-	public void Requirement2() { 
-		
-		Requirement2 req2= new Requirement2(driver);
-		req2.popularSearch();
+	public void Requirement4() { 
+		Requirement4 req4= new Requirement4(driver);
+		req4.login(driver);
 	}
 	
 	@AfterMethod
